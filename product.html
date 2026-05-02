@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!--Tailwind CSS CDN LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+     <!--Responsive Navbar-->
+     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">GREENDEN</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-6 h-6 md:hidden  cursor-pointer ">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+
+    <ul class="flex gap-5 text-gray-600 hidden md:flex"  >
+               <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+               </li>
+               <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+               </li>
+               <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+               </li>
+            </ul>
+     </nav>
+
+           <!--Side Navbar-->
+  <section id="side-nav"
+    class="md:hidden bg-gradient-to-b from-green-50 to-green-100 fixed z-50 top-0 right-0 w-4/5 max-w-xs h-screen shadow-2xl border-l border-green-200 transform translate-x-full transition-transform duration-300 ease-out">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-green-200">
+      <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
+      <p id="close-nav"
+        class="cursor-pointer inline-flex items-center justify-center w-9 h-9 rounded-full text-green-900 bg-white hover:bg-green-200 transition duration-200">
+        ✕</p>
+    </div>
+    <ul class="flex flex-col gap-4 text-gray-700 p-6 font-medium">
+      <li><a href="./index.html"
+          class="block rounded-lg px-4 py-3 bg-white shadow-sm hover:shadow-md hover:bg-green-200 transform hover:-translate-y-0.5 transition duration-200">Home</a>
+      </li>
+      <li><a href="./product.html"
+          class="block rounded-lg px-4 py-3 bg-white shadow-sm hover:shadow-md hover:bg-green-200 transform hover:-translate-y-0.5 transition duration-200">Products</a>
+      </li>
+      <li><a href="./contact.html"
+          class="block rounded-lg px-4 py-3 bg-white shadow-sm hover:shadow-md hover:bg-green-200 transform hover:-translate-y-0.5 transition duration-200">Contact</a>
+      </li>
+    </ul>
+  </section>      
+
+            <!---our Product bar-->
+            <section class="flex flex-col gap-5  " >
+                <h1 class="text-center text-5xl font-bold p-5">Our Products</h1>
+                 <input type="placeholder" placeholder="Search for products..."  class=" border border-black p-2 ml-10"style="width: 80%;" >
+            </section>
+            <!--Image Gallery-->
+            <seaction>
+                <section class="p-4 text-center">
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5" >
+            <div  >
+                <img src="./images/best seller 4.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Rose Plant</h1>
+                <p>$29.99</p>
+            </div>
+            <div  >
+                <img src="./images/best seller 2.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Snake Plant</h1>
+                <p>$69.99</p>
+            </div>
+            <div  >
+                <img src="./images/best seller 3.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 "   alt="Best Seller 1">
+                <h1>Chamaedorea</h1>
+                <p>$15.99</p>
+            </div>
+            <div  >
+                <img src="./images/best seller 1.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Spathiphyllum</h1>
+                <p>$30.99</p>
+            </div>
+        </div>
+        <section class="p-4 text-center">
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5" >
+            <div  >
+                <img src="./images/Untitled design.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Alocasia</h1>
+                <p>$99.99</p>
+            </div>
+            <div  >
+                <img src="./images/Untitled design (1).jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Thyme</h1>
+                <p>$60.99</p>
+            </div>
+            <div  >
+                <img src="./images/Untitled design (2).jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 "   alt="Best Seller 1">
+                <h1>Crassula ovata</h1>
+                <p>$45.99</p>
+            </div>
+            <div  >
+                <img src="./images/Untitled design (3).jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Prickly Pear</h1>
+                <p>$37.99</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5" >
+            <div  >
+                <img src="./images/p-8.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Zamioculcas</h1>
+                <p>$229.99</p>
+            </div>
+            <div  >
+                <img src="./images/p-7.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Ficus</h1>
+                <p>$90.99</p>
+            </div>
+            <div  >
+                <img src="./images/p-6.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 "   alt="Best Seller 1">
+                <h1>Spider Plant</h1>
+                <p>$85.99</p>
+            </div>
+            <div  >
+                <img src="./images/p-5.jpg" class="inline hover:shadow-2xl  transform hover:-translate-y-2 " alt="Best Seller 1">
+                <h1>Monstera Adansonii</h1>
+                <p>$40.99</p>
+            </div>
+        </div>
+      </section>
+      </section>
+            </seaction>
+
+ <!--Footer-->
+ <section>
+    <!--Footer-->
+     <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl front-bold">Greenden</h1>
+        <p>The Standard chunk of the Lorem Ipsum passage used since the 1500s is reproduced below for those interested.</p>
+        <p >@ 2026 Greenden.com</p>
+
+     </section>
+ </section>
+
+            </body>
+            </html>
