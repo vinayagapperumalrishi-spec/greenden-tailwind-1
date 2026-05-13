@@ -12,7 +12,7 @@
      <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
       class="w-6 h-6 md:hidden  cursor-pointer ">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
@@ -32,27 +32,24 @@
      </nav>
 
 
-          <!--Side Navbar-->
-  <section id="side-nav"
-    class="md:hidden bg-gradient-to-b from-green-50 to-green-100 fixed z-50 top-0 right-0 w-4/5 max-w-xs h-screen shadow-2xl border-l border-green-200 transform translate-x-full transition-transform duration-300 ease-out">
-    <div class="flex items-center justify-between px-5 py-4 border-b border-green-200">
-      <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
-      <p id="close-nav"
-        class="cursor-pointer inline-flex items-center justify-center w-9 h-9 rounded-full text-green-900 bg-white hover:bg-green-200 transition duration-200">
-        ✕</p>
-    </div>
-    <ul class="flex flex-col gap-4 text-gray-700 p-6 font-medium">
-      <li><a href="./index.html"
-          class="block rounded-lg px-4 py-3 bg-white shadow-sm hover:shadow-md hover:bg-green-200 transform hover:-translate-y-0.5 transition duration-200">Home</a>
-      </li>
-      <li><a href="./product.html"
-          class="block rounded-lg px-4 py-3 bg-white shadow-sm hover:shadow-md hover:bg-green-200 transform hover:-translate-y-0.5 transition duration-200">Products</a>
-      </li>
-      <li><a href="./contact.html"
-          class="block rounded-lg px-4 py-3 bg-white shadow-sm hover:shadow-md hover:bg-green-200 transform hover:-translate-y-0.5 transition duration-200">Contact</a>
-      </li>
-    </ul>
-  </section>
+     <!--Side navbar-->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width: 50%;height: 100vh; right: -50%;">
+  <div class="text-right p-5">
+    <p id="closenav" class="inline cursor-pointer">X</p>
+  </div>
+    <ul class="flex flex-col gap-10 items-center text-gray-600 " >
+               <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+               </li>
+               <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+               </li>
+               <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+               </li>
+
+            </ul>
+</section>
      
         <!--Contact Form-->
         <section class="bg-white dark:bg-gray-900">
@@ -91,6 +88,8 @@
 
      </section>
  </section>
+
+ <script src="contact.js"></script>
 
             </body>
             </html>
